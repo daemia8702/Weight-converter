@@ -1,4 +1,4 @@
-
+//Declarations
 var inp = document.getElementById("input");
 var select = document.getElementById("select");
 
@@ -7,15 +7,19 @@ var deka = document.getElementById("deka");
 var kilo = document.getElementById("kilo");
 var tonna = document.getElementById("tonna");
 
-
+//Displaying at start
 document.getElementById("dp-g").style.display = "none";
 document.getElementById("dp-dkg").style.display = "none"; 
 document.getElementById("dp-kg").style.display = "none";
 document.getElementById("dp-t").style.display = "none";
 
+
+//Adding eventlinsteners
 inp.addEventListener("input", convert);
 select.addEventListener("input", convert);
 
+
+//Converting the input values
 function convert(){
     var g = dkg = kg = t = inp.value;
     document.getElementById("dp-g").style.display = "block";
@@ -65,6 +69,8 @@ function convert(){
     
 }
 
+
+//Writing out the results
 function write(g, dkg, kg, t){
     gramm.innerHTML = g + " g";
     deka.innerHTML = dkg + " dkg";
