@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    background-color: #555;
+}
+
+.converter{
+    margin: 10px auto;
+    width: 60%;
+    border-radius: 5px;
+    padding: 5px;
+    color: #fff;
+}
+
+.converter h1{
+    text-align: center;
+    margin: 10px 0 10px 0;
+}
+
+.converter .field{
+    background-color: #54b575;
+    padding: 20px;
+    border-radius: 5px;
+    width: 80%;
+    margin: 10px auto;
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.converter input{
+    width: 70%;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.converter select{
+    width: 28%;
+    float: right;
+    margin-left: 2%;
+    padding: 9px;
+    border-radius: 5px;
+}
+
+.converter input[placeholder]{
+    font-style: italic;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+form::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.field .output h4{
+    text-transform: uppercase;
+    margin: 20px 0px 5px 0;
+}
+
+.field .output .number{
+    height: 40px;
+    border-radius: 5px;
+    color: #000;
+    padding-top: 10px;
+    padding-left: 10px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 18px;
+    box-shadow: 1px 1px 3px #888;
+}
+
+#gramm{
+    background-color: rgba(253, 8, 8, .69);
+}
+
+#tonna{
+    background-color: rgba(51, 67, 236, .56);
+}
+
+#deka{
+    background-color: rgba(9, 247, 233, .73);
+}
+
+#kilo{
+    background-color: rgba(214, 147, 50, .85);
+}
+
+@media(max-width:768px){
+    .converter{
+        width: 100%;
+        margin: 0;
+    }
+    .field{
+        width: 100%;
+        margin: 0;
+    }
+
+    .converter select{
+        float: none;
+        width: 100%;
+        margin: 10px auto 0 auto;
+    }
+
+    .converter input{
+        width: 100%;
+    }
+}
+
+@media(max-width: 1024px){
+    .converter select{
+        float: none;
+        width: 100%;
+        margin: 10px auto 0 auto;
+    }
+
+    .converter input{
+        width: 100%;
+    }
+}
